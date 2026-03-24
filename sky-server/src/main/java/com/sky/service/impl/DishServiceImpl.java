@@ -160,7 +160,7 @@ public class DishServiceImpl implements DishService {
                 .build();
         dishMapper.update(dish);
 
-        if (status == StatusConstant.DISABLE) {
+        if (Objects.equals(status, StatusConstant.DISABLE)) {
             // 如果是停售操作，还需要将包含当前菜品的套餐也停售
             List<Long> dishIds = new ArrayList<>();
             dishIds.add(id);
@@ -176,5 +176,14 @@ public class DishServiceImpl implements DishService {
                 }
             }
         }
+    }
+
+    @Override
+    public List<Dish> list(Long categoryId) {
+        Dish dish = Dish.builder()
+                .categoryId(categoryId)
+                .status(StatusConstant.ENABLE)
+                .build();
+        return dishMapper.list(dish);
     }
 }
