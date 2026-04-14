@@ -62,3 +62,7 @@ sky:
     weChatPayCertFilePath: ${sky.wechat.weChatPayCertFilePath}
     notifyUrl: ${sky.wechat.notifyUrl}
     refundNotifyUrl: ${sky.wechat.refundNotifyUrl}
+  shop:
+    address: 汕头大学东海岸校区
+  baidu:
+    ak: ${sky.baidu.ak}
