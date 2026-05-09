@@ -23,7 +23,7 @@ sky:
     privateKeyFilePath: D:\pay\apiclient_key.pem
     apiV3Key: CZBK51236435wxpay435434323FFDuv3
     weChatPayCertFilePath: D:\pay\wechatpay_166D96F876F45C7D07CE98952A96EC980368ACFC.pem
-    notifyUrl: https://6b8c2d28.r3.cpolar.top/notify/paySuccess
-    refundNotifyUrl: https://6b8c2d28.r3.cpolar.top/notify/refundSuccess
+    notifyUrl: https://70b23c3c.r3.cpolar.top/notify/paySuccess
+    refundNotifyUrl: https://70b23c3c.r3.cpolar.top/notify/refundSuccess
   baidu:
     ak: ${BAIDU_AK}
