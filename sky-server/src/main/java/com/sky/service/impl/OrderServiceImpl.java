@@ -192,7 +192,7 @@ public class OrderServiceImpl implements OrderService {
         // 分页条件查询
         Page<Orders> page = orderMapper.pageQuery(ordersPageQueryDTO);
 
-        List<OrderVO> list = new ArrayList();
+        List<OrderVO> list = new ArrayList<>();
 
         // 查询出订单明细，并封装入OrderVO进行响应
         if (page != null && page.getTotal() > 0) {
