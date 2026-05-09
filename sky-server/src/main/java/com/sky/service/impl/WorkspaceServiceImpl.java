@@ -38,6 +38,7 @@ public class WorkspaceServiceImpl implements WorkspaceService {
      * @param end
      * @return
      */
+    @Override
     public BusinessDataVO getBusinessData(LocalDateTime begin, LocalDateTime end) {
         /**
          * 营业额：当日已完成订单的总金额
@@ -90,6 +91,7 @@ public class WorkspaceServiceImpl implements WorkspaceService {
      *
      * @return
      */
+    @Override
     public OrderOverViewVO getOrderOverView() {
         Map map = new HashMap();
         map.put("begin", LocalDateTime.now().with(LocalTime.MIN));
@@ -128,6 +130,7 @@ public class WorkspaceServiceImpl implements WorkspaceService {
      *
      * @return
      */
+    @Override
     public DishOverViewVO getDishOverView() {
         Map map = new HashMap();
         map.put("status", StatusConstant.ENABLE);
@@ -147,6 +150,7 @@ public class WorkspaceServiceImpl implements WorkspaceService {
      *
      * @return
      */
+    @Override
     public SetmealOverViewVO getSetmealOverView() {
         Map map = new HashMap();
         map.put("status", StatusConstant.ENABLE);
